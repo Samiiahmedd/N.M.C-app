@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-SemiBold.ttf">
+            <string>Cairo-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileVC" customModule="N_M_C" customModuleProvider="target">
+            <connections>
+                <outlet property="headerImage" destination="aXO-yp-qwf" id="p7g-7x-7zW"/>
+                <outlet property="profileImage" destination="Ju5-h4-ShF" id="dfv-CE-SLi"/>
+                <outlet property="secondView" destination="HGR-v6-avG" id="kEG-DQ-IDf"/>
+                <outlet property="userNameLabel" destination="wdd-T3-NU7" id="rvJ-PR-dcQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="Fuh-EY-WCo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 49" translatesAutoresizingMaskIntoConstraints="NO" id="aXO-yp-qwf">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="157"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HGR-v6-avG">
+                    <rect key="frame" x="20" y="283" width="353" height="240"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="GZY-kL-43W">
+                            <rect key="frame" x="8" y="8" width="337" height="224"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OkN-ji-R6a">
+                                    <rect key="frame" x="0.0" y="0.0" width="206" height="44"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="card" imagePlacement="leading" title="  تعديل الملف الشخصي">
+                                        <fontDescription key="titleFontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="16"/>
+                                        <color key="baseForegroundColor" name="Color 4"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="editProfileButton:" destination="-1" eventType="touchUpInside" id="CfM-SD-aC3"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RqK-qK-3Um">
+                                    <rect key="frame" x="0.0" y="45" width="120.66666666666667" height="44"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="lock" imagePlacement="leading" title="الخصوصيه">
+                                        <fontDescription key="titleFontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="16"/>
+                                        <color key="baseForegroundColor" name="Color 4"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="privacyButton:" destination="-1" eventType="touchUpInside" id="qRU-5V-FFe"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zcf-Ry-rIv">
+                                    <rect key="frame" x="0.0" y="90" width="173.33333333333334" height="44"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="user" imagePlacement="leading" title="المساعدة &amp; الدعم">
+                                        <fontDescription key="titleFontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="16"/>
+                                        <color key="baseForegroundColor" name="Color 4"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="helpButton:" destination="-1" eventType="touchUpInside" id="hi9-7T-WQg"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ur-mL-lFG">
+                                    <rect key="frame" x="0.0" y="135" width="139.33333333333334" height="44"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="trash" imagePlacement="leading" title="حذف الحساب">
+                                        <fontDescription key="titleFontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="16"/>
+                                        <color key="baseForegroundColor" name="Color 4"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="deleteAccountButton:" destination="-1" eventType="touchUpInside" id="exp-qZ-pA6"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRC-hR-M3a">
+                                    <rect key="frame" x="0.0" y="180" width="141.66666666666666" height="44"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="logout" imagePlacement="leading" title="تسجيل الخروج">
+                                        <fontDescription key="titleFontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="16"/>
+                                        <color key="baseForegroundColor" name="Color 4"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="logoutButton:" destination="-1" eventType="touchUpInside" id="P1L-Vq-qhU"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="GZY-kL-43W" firstAttribute="top" secondItem="HGR-v6-avG" secondAttribute="top" constant="8" id="Asa-cE-Umx"/>
+                        <constraint firstAttribute="bottom" secondItem="GZY-kL-43W" secondAttribute="bottom" constant="8" id="WRI-PV-wAm"/>
+                        <constraint firstAttribute="trailing" secondItem="GZY-kL-43W" secondAttribute="trailing" constant="8" id="xTe-op-iND"/>
+                        <constraint firstItem="GZY-kL-43W" firstAttribute="leading" secondItem="HGR-v6-avG" secondAttribute="leading" constant="8" id="yWp-Tc-Hly"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4qE-kr-WuI">
+                    <rect key="frame" x="80" y="97" width="233" height="162"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Ju5-h4-ShF">
+                            <rect key="frame" x="55.666666666666657" y="0.0" width="122" height="122"/>
+                            <color key="backgroundColor" systemColor="systemGray6Color"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="122" id="YYa-cF-DcZ"/>
+                                <constraint firstAttribute="height" constant="122" id="cln-WK-vLW"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="61"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdd-T3-NU7">
+                            <rect key="frame" x="76.333333333333343" y="130" width="80.333333333333343" height="32"/>
+                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
+                            <color key="textColor" name="Color 4"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="aXO-yp-qwf" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="D3I-Vk-U5m"/>
+                <constraint firstItem="4qE-kr-WuI" firstAttribute="top" secondItem="aXO-yp-qwf" secondAttribute="bottom" constant="-60" id="Edc-pG-rgH"/>
+                <constraint firstItem="HGR-v6-avG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="MBz-mU-Lsf"/>
+                <constraint firstItem="aXO-yp-qwf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="WnM-cM-3yf"/>
+                <constraint firstItem="4qE-kr-WuI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="80" id="ZpQ-zJ-jlX"/>
+                <constraint firstItem="HGR-v6-avG" firstAttribute="top" secondItem="4qE-kr-WuI" secondAttribute="bottom" constant="24" id="bc8-7t-TUR"/>
+                <constraint firstItem="aXO-yp-qwf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dFw-w8-HbZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4qE-kr-WuI" secondAttribute="trailing" constant="80" id="jtR-lZ-Q2u"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HGR-v6-avG" secondAttribute="trailing" constant="20" id="qdg-VE-241"/>
+            </constraints>
+            <point key="canvasLocation" x="136.64122137404578" y="-1.4084507042253522"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Rectangle 49" width="390" height="157"/>
+        <image name="card" width="24" height="24"/>
+        <image name="lock" width="24" height="24"/>
+        <image name="logout" width="24" height="24"/>
+        <image name="splashLogo" width="181" height="52"/>
+        <image name="trash" width="24" height="24"/>
+        <image name="user" width="24" height="24"/>
+        <namedColor name="Color 4">
+            <color red="0.56862745098039214" green="0.52156862745098043" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

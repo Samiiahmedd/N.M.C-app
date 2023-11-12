@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MedicalGroupCollectionViewCell" id="gTV-IL-0wX" customClass="MedicalGroupCollectionViewCell" customModule="N_M_C" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="127" height="127"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="127" height="127"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9rp-nx-8pB">
+                        <rect key="frame" x="0.0" y="0.0" width="127" height="127"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="km0-7e-fZN">
+                                <rect key="frame" x="0.0" y="0.0" width="127" height="127"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="onboarding1" translatesAutoresizingMaskIntoConstraints="NO" id="OYs-ig-3EA">
+                                        <rect key="frame" x="0.0" y="0.0" width="127" height="99.666666666666671"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مستشفيات" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dJb-wJ-EmT">
+                                        <rect key="frame" x="0.0" y="99.666666666666671" width="127" height="26.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                                        <color key="textColor" red="0.94139506829999997" green="0.94139506829999997" blue="0.94139506829999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6mI-VS-L4X">
+                                        <rect key="frame" x="0.0" y="126" width="127" height="1"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="JlC-7T-hIN"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="Color 4"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="km0-7e-fZN" secondAttribute="bottom" id="I4a-wf-UfB"/>
+                            <constraint firstAttribute="trailing" secondItem="km0-7e-fZN" secondAttribute="trailing" id="UqP-Hc-WZx"/>
+                            <constraint firstItem="km0-7e-fZN" firstAttribute="top" secondItem="9rp-nx-8pB" secondAttribute="top" id="gAc-Sj-z2d"/>
+                            <constraint firstItem="km0-7e-fZN" firstAttribute="leading" secondItem="9rp-nx-8pB" secondAttribute="leading" id="xEV-Sl-GG5"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="9rp-nx-8pB" secondAttribute="trailing" id="Cze-K2-d1B"/>
+                <constraint firstItem="9rp-nx-8pB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Vz0-bO-yXy"/>
+                <constraint firstAttribute="bottom" secondItem="9rp-nx-8pB" secondAttribute="bottom" id="g6w-H4-kR6"/>
+                <constraint firstItem="9rp-nx-8pB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="uRl-ZN-Nb1"/>
+            </constraints>
+            <size key="customSize" width="127" height="127"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="MedicalGroupImage" destination="OYs-ig-3EA" id="TTD-DA-osQ"/>
+                <outlet property="MedicalGroupLabel" destination="dJb-wJ-EmT" id="etV-9S-ukO"/>
+            </connections>
+            <point key="canvasLocation" x="183.96946564885496" y="8.0985915492957758"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="onboarding1" width="385" height="400"/>
+        <namedColor name="Color 4">
+            <color red="0.56862745098039214" green="0.52156862745098043" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

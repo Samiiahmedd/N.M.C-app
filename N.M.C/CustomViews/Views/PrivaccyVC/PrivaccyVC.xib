@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-SemiBold.ttf">
+            <string>Cairo-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PrivaccyVC" customModule="N_M_C" customModuleProvider="target">
+            <connections>
+                <outlet property="privacyFirstDescLabel" destination="o8Y-Qq-LLA" id="pqx-oe-SYj"/>
+                <outlet property="privacySecondDiscLabel" destination="KFV-P1-nec" id="mD0-C5-oIV"/>
+                <outlet property="privacyTitleLabel" destination="L2m-YT-8tp" id="8Ed-Er-H5n"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الخصوصية" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="L2m-YT-8tp">
+                    <rect key="frame" x="144" y="73" width="105" height="45"/>
+                    <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="24"/>
+                    <color key="textColor" name="Color 4"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8Y-Qq-LLA">
+                    <rect key="frame" x="20" y="135" width="353" height="240"/>
+                    <string key="text">نحن نتيح للجميع اختيار إعدادات الخصوصية المناسبة لهم. إنّ حماية خصوصية المستخدمين وأمانهم هي مسؤولية تقع على عاتقنا عند إنشاء منتجات وخدمات مجانية ومتاحة للجميع، فالخصوصية عامل مهم للغاية في ظل تقدُّم التكنولوجيا وتزايد احتياجات الأمان. والمبادئ التالية هي الركيزة الأساسية التي تعتمد عليها منتجاتنا وعملياتنا وموظفونا للحفاظ على أمان وخصوصية بيانات المستخدمين.</string>
+                    <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFV-P1-nec">
+                    <rect key="frame" x="20" y="385" width="353" height="240"/>
+                    <string key="text">نحن نتيح للجميع اختيار إعدادات الخصوصية المناسبة لهم. إنّ حماية خصوصية المستخدمين وأمانهم هي مسؤولية تقع على عاتقنا عند إنشاء منتجات وخدمات مجانية ومتاحة للجميع، فالخصوصية عامل مهم للغاية في ظل تقدُّم التكنولوجيا وتزايد احتياجات الأمان. والمبادئ التالية هي الركيزة الأساسية التي تعتمد عليها منتجاتنا وعملياتنا وموظفونا للحفاظ على أمان وخصوصية بيانات المستخدمين.</string>
+                    <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="o8Y-Qq-LLA" secondAttribute="trailing" constant="20" id="7Ef-Sl-aeF"/>
+                <constraint firstItem="o8Y-Qq-LLA" firstAttribute="top" secondItem="L2m-YT-8tp" secondAttribute="bottom" constant="17" id="Abp-Fm-LUq"/>
+                <constraint firstItem="L2m-YT-8tp" firstAttribute="centerX" secondItem="o8Y-Qq-LLA" secondAttribute="centerX" id="SbC-LN-kG6"/>
+                <constraint firstItem="KFV-P1-nec" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Y68-F3-6eC"/>
+                <constraint firstItem="L2m-YT-8tp" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="14" id="ZKj-kH-R4B"/>
+                <constraint firstItem="KFV-P1-nec" firstAttribute="top" secondItem="o8Y-Qq-LLA" secondAttribute="bottom" constant="10" id="cXa-Ih-qD0"/>
+                <constraint firstItem="o8Y-Qq-LLA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="syy-QV-ff4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KFV-P1-nec" secondAttribute="trailing" constant="20" id="uD7-T0-osC"/>
+            </constraints>
+            <point key="canvasLocation" x="97" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Color 4">
+            <color red="0.56862745098039214" green="0.52156862745098043" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+        <array key="Cairo-SemiBold.ttf">
+            <string>Cairo-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateAccountVC" customModule="N_M_C" customModuleProvider="target">
+            <connections>
+                <outlet property="emailField" destination="TTP-0Z-Ut2" id="rVP-Xp-FhQ"/>
+                <outlet property="firstNameField" destination="LC6-1F-Y4e" id="BcM-8T-Sly"/>
+                <outlet property="passwordField" destination="Ia0-dm-ksq" id="PMQ-zl-Wz5"/>
+                <outlet property="phoneNumberField" destination="B25-ot-pDS" id="nuu-8A-uop"/>
+                <outlet property="secondNameField" destination="R07-sx-3DG" id="XdA-e3-2IT"/>
+                <outlet property="view" destination="x5w-mZ-Mgl" id="5OC-D9-C2e"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="x5w-mZ-Mgl">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XGv-9i-2vs" userLabel="الدخول كزائر">
+                    <rect key="frame" x="24.000000000000007" y="79" width="112.66666666666669" height="44"/>
+                    <color key="tintColor" name="Color 4"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title=" الدخول كزائر">
+                        <fontDescription key="titleFontDescription" name="Cairo-Bold" family="Cairo" pointSize="16"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="HomeGuestt:" destination="-1" eventType="touchUpInside" id="Zhx-NE-X3D"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="T5Z-Du-9yL">
+                    <rect key="frame" x="90" y="139" width="213" height="82.666666666666686"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="انشاء حساب" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oMK-lz-7tt">
+                            <rect key="frame" x="0.0" y="0.0" width="213" height="60"/>
+                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="32"/>
+                            <color key="textColor" name="Color main"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مرحبا بك من فضلك قم بانشاء حساب" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KY2-9G-1QZ">
+                            <rect key="frame" x="0.0" y="59.999999999999993" width="213" height="22.666666666666664"/>
+                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="12"/>
+                            <color key="textColor" name="Color main2"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyb-Xn-Ecv">
+                    <rect key="frame" x="24" y="573.66666666666663" width="345" height="50"/>
+                    <color key="backgroundColor" name="Color main"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="raF-FC-e3g"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="انشاء حساب">
+                        <fontDescription key="titleFontDescription" name="Cairo-Regular" family="Cairo" pointSize="20"/>
+                        <color key="baseForegroundColor" red="0.96400338630000004" green="0.96400338630000004" blue="0.96400338630000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </buttonConfiguration>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="CreateAccountButton:" destination="-1" eventType="touchUpInside" id="CEg-2y-q0u"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wtR-i8-NVn">
+                    <rect key="frame" x="69.666666666666671" y="639.66666666666663" width="253.66666666666663" height="40.333333333333371"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="لا يوجد لديك حساب؟" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Enz-rd-fKa">
+                            <rect key="frame" x="0.0" y="0.0" width="113.33333333333333" height="40.333333333333336"/>
+                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                            <color key="textColor" name="Color main2"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bM7-xN-lZt">
+                            <rect key="frame" x="113.33333333333333" y="0.0" width="140.33333333333337" height="40.333333333333336"/>
+                            <color key="tintColor" name="Color 4"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="قم بتسجيل الدخول">
+                                <fontDescription key="titleFontDescription" name="Cairo-Bold" family="Cairo" pointSize="14"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="LoginBtn:" destination="-1" eventType="touchUpInside" id="EeQ-5E-KBM"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="PtN-Z3-h5y">
+                    <rect key="frame" x="24" y="243.66666666666663" width="345" height="306"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" الاسم الأول" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LC6-1F-Y4e">
+                            <rect key="frame" x="0.0" y="0.0" width="345" height="50"/>
+                            <color key="backgroundColor" red="0.96400338630000004" green="0.96400338630000004" blue="0.96400338630000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" red="0.96400338630000004" green="0.96400338630000004" blue="0.96400338630000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="mB6-FE-fhu"/>
+                            </constraints>
+                            <color key="textColor" name="Color main3"/>
+                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="name"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  الاسم الثاني " textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R07-sx-3DG">
+                            <rect key="frame" x="0.0" y="64.000000000000028" width="345" height="50"/>
+                            <color key="backgroundColor" red="0.96400338630000004" green="0.96400338630000004" blue="0.96400338630000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="6gV-W5-EEx"/>
+                            </constraints>
+                            <color key="textColor" name="Color main3"/>
+                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="family-name"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  رقم التليفون" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B25-ot-pDS">
+                            <rect key="frame" x="0.0" y="128.00000000000003" width="345" height="50"/>
+                            <color key="backgroundColor" red="0.96400338630000004" green="0.96400338630000004" blue="0.96400338630000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="3F2-KQ-6i3"/>
+                            </constraints>
+                            <color key="textColor" name="Color main3"/>
+                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" textContentType="tel"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  البريد الالكتروني" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TTP-0Z-Ut2">
+                            <rect key="frame" x="0.0" y="192.00000000000003" width="345" height="50"/>
+                            <color key="backgroundColor" red="0.96400338630000004" green="0.96400338630000004" blue="0.96400338630000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="tMY-v2-RXq"/>
+                            </constraints>
+                            <color key="textColor" name="Color main3"/>
+                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="email"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  الرقم السري" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ia0-dm-ksq">
+                            <rect key="frame" x="0.0" y="256" width="345" height="50"/>
+                            <color key="backgroundColor" red="0.96400338630000004" green="0.96400338630000004" blue="0.96400338630000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="j6V-Du-CxQ"/>
+                            </constraints>
+                            <color key="textColor" name="Color main3"/>
+                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="password"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Rzw-pY-hdv"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="gyb-Xn-Ecv" firstAttribute="top" secondItem="PtN-Z3-h5y" secondAttribute="bottom" constant="24" id="0IA-lY-4eW"/>
+                <constraint firstItem="T5Z-Du-9yL" firstAttribute="leading" secondItem="Rzw-pY-hdv" secondAttribute="leading" constant="90" id="0Si-vA-8EM"/>
+                <constraint firstItem="XGv-9i-2vs" firstAttribute="top" secondItem="Rzw-pY-hdv" secondAttribute="top" constant="20" id="5xr-8s-2OD"/>
+                <constraint firstItem="wtR-i8-NVn" firstAttribute="top" secondItem="gyb-Xn-Ecv" secondAttribute="bottom" constant="16" id="FHB-Ts-8Jf"/>
+                <constraint firstItem="Rzw-pY-hdv" firstAttribute="trailing" secondItem="T5Z-Du-9yL" secondAttribute="trailing" constant="90" id="GfK-YS-hjS"/>
+                <constraint firstItem="PtN-Z3-h5y" firstAttribute="leading" secondItem="Rzw-pY-hdv" secondAttribute="leading" constant="24" id="K9A-1N-f8e"/>
+                <constraint firstItem="T5Z-Du-9yL" firstAttribute="top" secondItem="XGv-9i-2vs" secondAttribute="bottom" constant="16" id="UmE-Wg-Lbc"/>
+                <constraint firstItem="gyb-Xn-Ecv" firstAttribute="leading" secondItem="Rzw-pY-hdv" secondAttribute="leading" constant="24" id="Yeg-0k-4H9"/>
+                <constraint firstItem="wtR-i8-NVn" firstAttribute="centerX" secondItem="gyb-Xn-Ecv" secondAttribute="centerX" id="bZz-J1-r6u"/>
+                <constraint firstItem="Rzw-pY-hdv" firstAttribute="trailing" secondItem="PtN-Z3-h5y" secondAttribute="trailing" constant="24" id="rrZ-iC-Vcr"/>
+                <constraint firstItem="Rzw-pY-hdv" firstAttribute="trailing" secondItem="gyb-Xn-Ecv" secondAttribute="trailing" constant="24" id="tc0-AT-hkT"/>
+                <constraint firstItem="XGv-9i-2vs" firstAttribute="leading" secondItem="Rzw-pY-hdv" secondAttribute="leading" constant="24" id="uf6-sE-UPW"/>
+                <constraint firstItem="PtN-Z3-h5y" firstAttribute="top" secondItem="T5Z-Du-9yL" secondAttribute="bottom" constant="22" id="zyv-2j-OPA"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Color 4">
+            <color red="0.56862745098039214" green="0.52156862745098043" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color main">
+            <color red="0.0" green="0.69019607843137254" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color main2">
+            <color red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color main3">
+            <color red="0.64313725490196083" green="0.68235294117647061" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
